@@ -11,7 +11,7 @@ function Box(bannerdiv, textdiv, texttitle, image, elemento){
             </div>
             <div style={textdiv}>
                 <p>
-                    {element}
+                    {elemento}
                 </p>
             </div>
         </div>
