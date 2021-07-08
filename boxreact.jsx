@@ -1,4 +1,8 @@
 function Box(bannerdiv, textdiv, texttitle, image){
+    if(texttitle == "SAIBA MAIS")
+        elemento = document.getElementById('saiba-mais').childNodes[0].nodeValue;
+    else if(texttitle == "PAUSA PARA PIPOCA")
+        return elemento = document.getElementById('pausa-para-pipoca').childNodes[0].nodeValue;
     return (
         <div style={{border: '3px solid #F29D00'}}>
             <div class="d-flex justify-content-between bd-highlight mb-3 align-items-center" style={bannerdiv}>
@@ -11,7 +15,7 @@ function Box(bannerdiv, textdiv, texttitle, image){
             </div>
             <div style={textdiv}>
                 <p>
-                    {element}
+                    {elemento}
                 </p>
             </div>
         </div>
@@ -32,14 +36,10 @@ function Saibamais(props) {
         Box(divbanner, divtext, texttitle, image)
     );
 }
-const child = document.getElementById('saiba-mais');
-const element = document.getElementById('saiba-mais').childNodes[0].nodeValue;
-ReactDOM.render(<Saibamais/>, document.getElementById('saiba-mais'));
-
 
 function PausaParaPipoca(props){
     const divbanner = {
-        background: '#F29D00',
+        background: '#0554BF',
     };
     const divtext = {
         padding: '#15px !important',
@@ -52,6 +52,5 @@ function PausaParaPipoca(props){
     );
 }
 
-const child = document.getElementById('pausa-para-pipoca');
-const element = document.getElementById('pausa-para-pipoca').childNodes[0].nodeValue;
+ReactDOM.render(<Saibamais/>, document.getElementById('saiba-mais'));
 ReactDOM.render(<PausaParaPipoca/>, document.getElementById('pausa-para-pipoca'));
