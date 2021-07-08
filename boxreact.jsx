@@ -31,7 +31,7 @@ function Saibamais(props) {
         margin: '0px !important'
     };
     const texttitle = 'SAIBA MAIS';
-    const image = ""
+    const image = "https://drive.google.com/uc?id=1HCgHMDRb86oTkS5E9knc7LtaJ_VSfk1o"
     return (
         Box(border, divbanner, divtext, texttitle, image, textarea)
     );
@@ -50,7 +50,7 @@ function PausaParaPipoca(props){
         margin: '0px !important'
     };
     const texttitle = 'PAUSA PARA PIPOCA';
-    const image = ""
+    const image = "https://drive.google.com/uc?id=10YqcALeY5qyZkW60LlZHgVZInrbYbrLL"
     return (
         Box(border, divbanner, divtext, texttitle, image, textarea)
     );
